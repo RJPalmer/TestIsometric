@@ -30,7 +30,7 @@ public class CharController : MonoBehaviour {
         Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
         Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
 
-        Veactor3 heading = Vector3.Normalize(rightMovement + upMovement);
+        Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
 
         transform.forward = heading;
         transform.position += rightMovement;
